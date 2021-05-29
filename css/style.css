@@ -1,6 +1,5 @@
 body {
     font-family: 'Quicksand', sans-serif;
-    
 }
 .header-grid {
     display: grid;
@@ -20,7 +19,6 @@ body {
 
 .navegacao {
     height: 60px;
-    /* background-color: #222129f8; */
     width: 100%;
     display: fixed;
     grid-column: 7 / -1;
@@ -37,6 +35,10 @@ body {
     margin-right: 80px;
     padding-top: 20px;
     padding-bottom: 5px;
+}
+.navegacao ul li:hover {
+    border-bottom: 2px solid #fff;
+
 }
 .navegacao a {
     color: #fff; 
@@ -87,21 +89,21 @@ body {
     display: flex;
     align-content: center;
     justify-content: center;
-    /* background-color: #222129; */
     height: 70px;
     border-radius: 0 5px 5px 0;
     z-index: 1;
-
 }
 .social ul {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-
+}
+.social ul li {
+    margin-left: 80px;
 }
 
 .social img{
-    width: 110px;
+    width: 60px;
     height: 30px;
 }
 .soundcloud {

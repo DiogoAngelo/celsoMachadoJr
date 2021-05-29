@@ -57,6 +57,7 @@ em {
     border-radius: 5px;
     color: #222129;
     background-color: transparent;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
 .listen:hover {
     background-color:#222129;
@@ -117,6 +118,14 @@ em {
     width: 110px; 
     top: -15px;
     left: 0;
+}
+footer  {
+    background-color: #222129;
+    color: #fff;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
