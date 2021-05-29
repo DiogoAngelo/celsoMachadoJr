@@ -1,0 +1,102 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 700px;
+}
+.flex-container img {
+    width: 30%;
+    filter: grayscale(1)
+    
+}
+.descricao {
+    width: 520px;
+    line-height: 22px;
+}
+
+.titulo-banda {
+    font-family: vortice-concept, sans-serif;
+    color: #222129;
+    width: 60px;
+    height: 25px;
+    padding-top: 10px;
+    padding-left: 70px;
+    font-size: 1.2rem;
+    border: 3px solid #222129;
+    border-radius: 5px;
+}
+.date {
+    display: block;
+    margin: 20px 0 5px 0;
+    font-weight: bold;
+}
+em {
+    font-weight: bold;
+}
+.listen {
+    font-family: vortice-concept, sans-serif;
+    letter-spacing: 8px;
+    display: block;
+    text-align: center;
+    padding: 0 20px;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border: 3px solid #222129;
+    border-radius: 5px;
+    color: #222129;
+    background-color: transparent;
+}
+.listen:hover {
+    background-color:#222129;
+    color: #fff;
+}
+/* DARK SECTION */
+
+.descricao-dark {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.descricao-dark p {
+    text-align: right;
+}
+
+.dark {
+    background: #222129;
+    color: #fff;
+    flex-direction: row-reverse;
+}
+.dark .titulo-banda {
+    color: #fff;
+    border: none;
+    margin-right: 5px;
+    
+    position: relative;
+}
+.dark .listen {
+    color: #fff;
+    border: 3px solid #fff;
+}
+.dark .listen:hover {
+    background-color: #fff;
+    color: #222129;
+}
+/* CELSO 3D */
+
+.celso-3d .titulo-banda::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    position: absolute;
+    top: -10px;
+    left: 80px;
+}   
+ /* OFICINA G3  */
+
+
+
