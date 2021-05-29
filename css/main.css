@@ -7,25 +7,29 @@
 }
 .flex-container img {
     width: 30%;
-    filter: grayscale(1)
-    
+    filter: grayscale(1);   
 }
 .descricao {
     width: 520px;
     line-height: 22px;
 }
-
 .titulo-banda {
+    display: inline-block;
     font-family: vortice-concept, sans-serif;
     color: #222129;
-    width: 60px;
     height: 25px;
-    padding-top: 10px;
-    padding-left: 70px;
     font-size: 1.2rem;
+    position: relative;
+}
+.titulo-banda::after {
+    content: '';
+    width: 50px;
+    height: 40px;
     border: 3px solid #222129;
     border-radius: 5px;
-}
+    background-color: transparent;
+    position: absolute;
+}   
 .date {
     display: block;
     margin: 20px 0 5px 0;
@@ -54,26 +58,24 @@ em {
 }
 /* DARK SECTION */
 
-.descricao-dark {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.descricao-dark p {
-    text-align: right;
-}
-
 .dark {
     background: #222129;
     color: #fff;
     flex-direction: row-reverse;
 }
+.descricao-dark {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 .dark .titulo-banda {
     color: #fff;
-    border: none;
-    margin-right: 5px;
-    
-    position: relative;
+}
+.dark .titulo-banda::after{
+    border: 3px solid #fff;
+}
+.descricao-dark p {
+    text-align: right;
 }
 .dark .listen {
     color: #fff;
@@ -83,20 +85,33 @@ em {
     background-color: #fff;
     color: #222129;
 }
+/* OBSERVE */
+.observe .titulo-banda {
+    padding-left: 35px;
+}
+.observe .titulo-banda:after {
+    width: 100px; 
+    top: -15px;
+    left: 0;
+}
 /* CELSO 3D */
-
-.celso-3d .titulo-banda::after {
-    content: '';
-    width: 50px;
-    height: 50px;
-    border: 3px solid #fff;
-    border-radius: 5px;
-    background-color: transparent;
-    position: absolute;
-    top: -10px;
-    left: 80px;
-}   
+.celso-3d .titulo-banda {
+    padding-right: 35px;
+}
+.celso-3d .titulo-banda:after {
+    width: 50px; 
+    top: -15px;
+    right: 0;
+}
  /* OFICINA G3  */
+ .oficina-g3 .titulo-banda {
+    padding-left: 35px;
+}
+.oficina-g3 .titulo-banda:after {
+    width: 110px; 
+    top: -15px;
+    left: 0;
+}
 
 
 
