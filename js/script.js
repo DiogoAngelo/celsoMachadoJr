@@ -1,4 +1,4 @@
-const btnListen = document.querySelectorAll('.listen');
+const btnListen = document.querySelectorAll('.click');
 const imgColor = document.querySelectorAll('.color');
 
 function addColor() {
