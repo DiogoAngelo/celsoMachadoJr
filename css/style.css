@@ -8,7 +8,7 @@ body {
     background-image: url('../img/capa-bw.png');
     background-size: cover;
     background-position: center;
-    height: 690px;
+    height: 100vh;
 }
 .header-grid:before {
     content: '';

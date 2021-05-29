@@ -5,10 +5,16 @@
     gap: 50px;
     height: 700px;
 }
-.flex-container img {
+.flex-container .color {
     width: 30%;
-    filter: grayscale(1);   
+    filter: grayscale(1);
+    transition: .5s;   
 }
+.color.ativo {
+    filter: grayscale(0);
+    animation: addColor;
+}
+
 .descricao {
     width: 520px;
     line-height: 22px;
