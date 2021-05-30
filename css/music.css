@@ -1,5 +1,15 @@
-.navegacao a {
-    color: #222129;
+body {
+    background-color: #222129;
+}
+
+.main-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.celso-3d {
+    margin-bottom: 50px;
 }
 .navegacao li:hover a {
     border-bottom: 2px solid #222129;
@@ -10,7 +20,8 @@
 }
 .project-title {
     font-family: 'Intro Rust G';
-    font-size: 5rem;;
+    font-size: 5rem;
+    color: #fff;
 }
 .mycd {
     height: 100%;
