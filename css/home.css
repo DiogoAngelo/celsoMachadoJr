@@ -38,11 +38,11 @@ body {
 }
 .navegacao ul li:hover {
     border-bottom: 2px solid #fff;
-
 }
 .navegacao a {
     color: #fff; 
 }
+
 .atual {
     border-bottom: 2px solid #fff;
 }
@@ -51,7 +51,7 @@ body {
     font-weight: 400;
     font-size: 9rem;
     color: #fff;
-    grid-column: 7 / 12;
+    grid-column: 7 / 11;
     justify-self: start;
     align-self: center;
     text-align: center;
@@ -102,14 +102,23 @@ body {
 }
 .social ul li {
     margin-left: 80px;
+    font-size: 1.5rem;
 }
 
-.social img {
-    width: 50px;
-    height: 30px;
+.social a {
+    color: #fff;
 }
-.soundcloud {
-    width: 70px;
+.social .instagram:hover {
+    color: #bc2a8d
+}
+.social .facebook:hover {
+    color: #4267B2
+}
+.social .soundcloud:hover {
+    color: #ff8800;
+}
+.social .spotify:hover {
+    color: #1DB954
 }
 
 /* MAIN */
