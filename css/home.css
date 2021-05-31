@@ -298,23 +298,26 @@ footer  {
 }
 @media(max-width: 900px) {
     .header-grid {
-        grid-template-columns: 100px 1fr 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        justify-content: center;
+        align-content: center;
     }
     .navegacao {
-        grid-column: 2;
         visibility: hidden;
 
     }
     .celso-titulo {
-        grid-column: 2;
+        /* grid-column: 2; */
         margin: 0 auto;
     }
     .button {
-        grid-column: 2;
+        /* grid-column: 2; */
         margin: 0 auto;
     }
     .social {
-        grid-column: 2;
+        /* grid-column: 2; */
         margin: 0 auto;
     }
     .social ul li:first-child {
