@@ -90,7 +90,7 @@ body {
     height: 1px;
     width: 1px;
     border-radius: 50%;
-    box-shadow: 0px 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px 0px transparent;
     transition: 400ms ease-in-out 0s;
 }
 .menu-grow-items {
