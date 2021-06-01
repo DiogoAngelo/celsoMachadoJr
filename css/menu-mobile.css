@@ -1,0 +1,94 @@
+/* MENU HAMBURGUER */
+
+.menu-mobile-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.burger {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+}
+.menu-mobile-wrapper .trace{
+    width: 30px;
+    height: 2px;
+    right: 30px;
+    background-color: #ccc;
+    border-radius: 4px;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+.menu-mobile-wrapper .trace:nth-child(1) {
+    top: 26px;
+}
+.menu-mobile-wrapper .trace:nth-child(2) {
+    top: 36px;
+}
+.menu-mobile-wrapper .trace:nth-child(3) {
+    top: 46px;
+}
+.menu-grow {
+    position: fixed;
+    top: 28px;
+    right: 30px;
+    background: transparent;
+    z-index: -1;
+    height: 1px;
+    width: 1px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0px transparent;
+    transition: 400ms ease-in-out 0s;
+}
+.menu-grow-items {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+}
+.menu-grow-items ul li a {
+    color: #222129;
+    letter-spacing: 4px;
+    font-size: 1.8rem;
+    display: inline-block;
+    margin: 15px 0;
+}
+/* ANIMACAO MENU HAMBURGER */
+
+.burger .trace:nth-child(1).ativo {
+    transform: rotate(45deg);
+    top: 47px;
+}
+.burger .trace:nth-child(2).ativo {
+    opacity: 0;
+    visibility: hidden;
+}
+.burger .trace:nth-child(3).ativo {
+    transform: rotate(-45deg);
+    top: 48px;
+}
+
+.menu-grow.ativo {
+    box-shadow: 0px 0px 0px 100vmax #fff;
+    z-index: 4;
+}
+.menu-grow-items.ativo {
+    opacity: 1;
+    visibility: visible;
+    transition: 900ms ease-in-out 0s;
+}
