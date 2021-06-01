@@ -1,5 +1,5 @@
 const btnListen = document.querySelectorAll('.click');
-const imgColor = document.querySelectorAll('.color');
+const imgColor = document.querySelectorAll('.img');
 
 function addColor() {
     imgColor.forEach((item) => {

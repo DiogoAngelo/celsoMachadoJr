@@ -228,7 +228,7 @@ body {
     filter: grayscale(1);
     transition: .5s;   
 }
-.color.ativo {
+.img.ativo {
     filter: grayscale(0);
     animation: addColor;
 }
