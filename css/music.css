@@ -1,7 +1,9 @@
 body {
     background-color: #222129;
 }
-
+.header-grid {
+    background-image: url('../img/capa-color.png');
+}
 .main-grid {
     display: flex;
     flex-direction: column;
@@ -23,7 +25,7 @@ body {
     font-size: 5rem;
     color: #fff;
 }
-.mycd {
+.celso-3d  {
     height: 100%;
     width: 100%;
     margin-bottom: 10rem;
@@ -33,4 +35,7 @@ body {
 }
 .mycd iframe {
     box-shadow: 10px 10px 10px black;
+}
+.atual {
+    border-bottom: 2px solid #fff;
 }

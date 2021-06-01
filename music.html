@@ -1,41 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/music.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.typekit.net/mdb6yrd.css">
-        
-        <title>Celso Machado</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/mdb6yrd.css">
+
+    <title>Celso Machado</title>
+</head>
+
 <body>
-        <header class="header">
-            <nav class="navegacao">
+    <header class="header">
+        <nav class="navegacao">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="#">news</a></li>
+                <li class="atual"><a href="#">music</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-mobile-wrapper">
+            <div class="burger">
+                <div class="trace"></div>
+                <div class="trace"></div>
+                <div class="trace"></div>
+            </div>
+            <div class="menu-grow"></div>
+            <nav class="menu-grow-items">
                 <ul>
-                    <li><a href="index.html" >home</a></li>
+                    <li><a href="index.html">home</a></li>
                     <li><a href="#">news</a></li>
+                    <li><a href="music.html">music</a></li>
                     <li><a href="#">projects</a></li>
                     <li><a href="#">contact</a></li>
                 </ul>
             </nav>
-        </header>
- <div class="main-grid">
-    <h1 class="project-title">3D</h1>
-    
-    <div class="celso-3d">
-        <iframe width="960" height="415" src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_mkaz24KJuycbT-vzy0MJmYUxbPDerqYIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </header>
+    <div class="main-grid">
+        <h1 class="project-title">3D</h1>
+
+        <div class="celso-3d">
+            <iframe width="960" height="415"
+                src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_mkaz24KJuycbT-vzy0MJmYUxbPDerqYIs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
     </div>
 
- </div>
-
     <footer class="footer">
-        <p>&COPY All rights reserved</p> 
+        <p>&COPY All rights reserved</p>
     </footer>
+    <script src="js/script.js"></script>
+    <script src="js/menu-burger.js"></script>
 </body>
+
 </html>
