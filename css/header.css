@@ -7,7 +7,6 @@ body {
          url('introrustg-base2line-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 .header-grid {
     display: grid;
@@ -65,7 +64,6 @@ body {
     margin: 50px auto;
     line-height: 70px;
     letter-spacing: 10px;
-    width: 520px;
     z-index: 1;
 }
 .machado {
