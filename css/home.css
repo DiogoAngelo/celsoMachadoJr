@@ -4,12 +4,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    /* gap: 50px; */
     height: 700px;
 }
 .flex-container .img {
     width: 30%;
     min-width: 450px;
+    margin: 0 25px;
     filter: grayscale(1);
     transition: .5s;   
 }
@@ -20,6 +21,7 @@
 
 .descricao {
     width: 520px;
+    margin: 0 25px;
     line-height: 22px;
 }
 .titulo-banda {
@@ -29,15 +31,18 @@
     height: 25px;
     font-size: 1.2rem;
     position: relative;
+    z-index: 1;
 }
 .titulo-banda::after {
     content: '';
     width: 50px;
     height: 40px;
-    border: 3px solid #222129;
+    top: -12px;
+    border: none;
     border-radius: 5px;
-    background-color: transparent;
+    background-color: #8B8B8B;
     position: absolute;
+    z-index: -1;
 }   
 .date {
     display: block;
@@ -78,16 +83,12 @@ em {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    text-align: right;
 }
 .dark .titulo-banda {
     color: #fff;
 }
-.dark .titulo-banda::after{
-    border: 3px solid #fff;
-}
-.descricao-dark p {
-    text-align: left;
-}
+
 .dark .click {
     color: #fff;
     border: 3px solid #fff;
@@ -109,17 +110,15 @@ em {
 }
 .observe .titulo-banda:after {
     width: 100px; 
-    top: -15px;
     left: 0;
 }
 /* CELSO 3D */
 .celso-3d .titulo-banda {
-    padding-right: 35px;
+    padding-left: 30px;
 }
 .celso-3d .titulo-banda:after {
-    width: 50px; 
-    top: -15px;
-    right: 0;
+    width: 50px;
+    left: 0;
 }
  /* OFICINA G3  */
  .oficina-g3 .titulo-banda {
@@ -127,7 +126,6 @@ em {
 }
 .oficina-g3 .titulo-banda:after {
     width: 110px; 
-    top: -15px;
     left: 0;
 }
 footer  {
