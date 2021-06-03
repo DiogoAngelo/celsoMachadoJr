@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 50px; */
     height: 700px;
 }
 .flex-container .img {
@@ -18,7 +17,6 @@
     filter: grayscale(0);
     animation: addColor;
 }
-
 .descricao {
     width: 520px;
     margin: 0 25px;
