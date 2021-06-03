@@ -1,9 +1,8 @@
 /* MENU HAMBURGUER */
 
 .menu-mobile-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
+    visibility: none;
 }
 .burger {
     position: fixed;
