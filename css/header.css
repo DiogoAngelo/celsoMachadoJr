@@ -31,10 +31,13 @@ body {
 .navegacao {
     height: 60px;
     width: 100%;
-    display: fixed;
     grid-column: 7 / -1;
     border-radius: 5px 0 0 5px;
     z-index: 1;
+}
+.navegacao.ativo {
+    position: fixed;
+    background-color: rgba(0,0,0,0.7);
 }
 .navegacao ul{
     display: flex;
