@@ -1,11 +1,21 @@
 export default function initMenuBar() {
-    const navBar = document.querySelector('.navegacao');
-    const navBarHeight = navBar.getBoundingClientRect().top;
+    const navBars = document.querySelectorAll('.navegacao');
 
     function showBar() {
-        if(navBarHeight < -50) {
-            navBar.classList.add('ativo');
-        }
+        navBars.forEach((navBar) => {
+            const navBarHeight = navBar.getBoundingClientRect().top;
+            if(navBarHeight < -50) {
+                if(!navBar.classList.contains('ativo')) {
+                    navBar.classList.add('ativo');
+                }
+            } 
+            if(window.scrollY == 0) {
+                if(navBar.classList.contains('ativo')) {
+
+                navBar.classList.remove('ativo')
+                }
+            }
+        }); 
     }
     window.addEventListener('scroll', showBar);
 }

@@ -38,6 +38,16 @@ body {
 .navegacao.ativo {
     position: fixed;
     background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+    animation: animaBar .5s;
+}
+@keyframes animaBar {
+    from {
+        transform: translate3d(0, -50px, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
 }
 .navegacao ul{
     display: flex;
