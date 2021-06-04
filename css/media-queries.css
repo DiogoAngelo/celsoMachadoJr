@@ -68,9 +68,6 @@
     .social ul li:first-child {
         margin-left: 0;
     }
-    .header-grid:before {
-        /* background-color:rgba(0,0,0,0.6); */
-    }
     .menu-mobile-wrapper {
         display: flex;
         justify-content: center;
