@@ -134,13 +134,5 @@
         border: 3px solid #fff;
     }
 }
-/* PAGE MUSIC */
 
-@media(max-width: 900px) {
-    .header-grid-music {
-        background-size: 500px;
-
-    }
-
-}
 
