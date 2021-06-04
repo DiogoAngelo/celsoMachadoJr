@@ -1,8 +1,13 @@
+
 body {
     background-color: #222129;
 }
 .header-grid {
-    background-image: url('../img/capa-color.png');
+    background-image: url('../img/celso-pick.png');
+    background-size: 680px;
+    background-position: 110px 10px;
+    background-repeat: no-repeat;
+    background-color: #212121;
 }
 .main-grid {
     display: flex;
