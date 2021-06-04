@@ -11,14 +11,14 @@ body {
 }
 .header-grid-music {
     background-image: url('../img/celso-pick.png');
-    background-size: 680px;
+    background-size: 70%;
     background-position: 110px 10px;
     background-repeat: no-repeat;
     background-color: #212121;
 }
-.header-grid-music::before {
+/* .header-grid-music::before {
     display: none;
-}
+} */
 .quote {
     grid-column: 7;
     grid-row: 3;
@@ -27,12 +27,10 @@ body {
     font-size: 1.8rem;
     justify-self: center;
     align-self: center;
-
     font-family: satisfy, sans-serif;
-
     font-weight: 400;
-
     font-style: normal;
+    z-index: 2;
 }
 .button {
     grid-row: 4;
@@ -75,13 +73,17 @@ body {
     border-bottom: 2px solid #fff;
 }
 @media(max-width: 1170px) {
+    .header-grid-music {
+        background-size: 85%;
+        background-position: 110px 10px;
+    }
     .quote {
         grid-column: 3;
     }
 }
 @media(max-width: 900px) {
     .header-grid-music {
-        background-size: 50%;
+        background-size: 100%;
         background-position: 40% 10px;
     }
     .quote {
@@ -90,8 +92,8 @@ body {
 }
 @media(max-width: 630px) {
     .header-grid-music {
-        background-size: 90%;
-        background-position: 10% 60px;
+        background-size: 200%;
+        background-position: -200px 0;
     }
     .quote {
         font-size: 1.3rem;
@@ -100,7 +102,7 @@ body {
 }
 @media(max-width: 400px) {
     .header-grid-music {
-        background-size: 90%;
-        background-position: 0 60px;
+        background-size: 200%;
+        background-position: -200px 0;
     }
 }
