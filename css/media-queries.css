@@ -43,6 +43,7 @@
     .header-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 100px 180px 1fr 1fr;
+        background-attachment:scroll;
         align-items: center;
         height: 100%;
     }
