@@ -1,7 +1,4 @@
 
-body {
-    background-color: #222129;
-}
 @font-face {
     font-family: 'introrustg-base2line';
     src: url('introrustg-base2line-webfont.woff2') format('woff2'),
@@ -29,46 +26,44 @@ body {
     font-style: normal;
     z-index: 2;
 }
-.button {
-    grid-row: 4;
+.center-container {
+    margin: 0 auto;
 }
-.main-grid {
+.music-grid {
+    padding: 100px 0 50px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 120px 0;
-    background-color: #fff;
-}
-.celso-3d {
-    margin-bottom: 50px;
-}
-.navegacao li:hover a {
-    border-bottom: 2px solid #222129;
-}
-.atual {
-    border-bottom: 2px solid #222129;
-    ;
 }
 .project-title {
-    font-family: 'introrustg-base2line';
-    font-size: 5rem;
+    font-family: vortice-concept, sans-serif;
+    font-size: 2rem;
     color: #222;
+    margin-bottom: 20px;
 }
-.celso-3d  {
-    height: 100%;
-    width: 100%;
-    margin-bottom: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.tracks {
+    margin: 20px 0;
+    line-height: 40px;
 }
-.mycd iframe {
-    box-shadow: 10px 10px 10px black;
+.tracks li {
+    position: relative;
+    padding-left: 30px;
 }
-.atual {
-    border-bottom: 2px solid #fff;
+.tracks li::before {
+    content: '▶';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+.tracks a {
+    color: #000;
+}
+.time {
+    float: right;
+    margin-right: 20px;
+}
+
 @media(max-width: 1170px) {
     .header-grid-music {
         background-size: 95%;
@@ -91,14 +86,49 @@ body {
         background-size: 200%;
         background-position: -200px 0;
     }
+    .project-title {
+        font-size: 1.5rem;
+    }
+
     .quote {
         font-size: 1.3rem;
         align-self:flex-start;
     }
+    .center-container {
+        margin: 0 10%;
+    }
 }
+@media(max-width: 530px) {
+    .project-title {
+        font-size: 1.2rem;
+    }
+    .album iframe {
+        width: 315px;
+        height: 315px;
+    }
+}
+
 @media(max-width: 415px) {
     .header-grid-music {
         background-size: 300%;
         background-position: -350px -100px;
     }
+    .project-title {
+        font-size: 1rem;
+    }
+    .center-container {
+        margin: 0 20px;
+    }
+}
+@media(max-width: 400px) {
+    .album iframe {
+        width: 300px;
+        height: 300px;
+    } 
+}
+@media(max-width: 340px) {
+    .album iframe {
+        width: 280px;
+        height: 280px;
+    } 
 }
