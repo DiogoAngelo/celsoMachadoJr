@@ -11,10 +11,11 @@ const arraySongs = [
     "https://www.youtube.com/embed/KH0UEvJ_ES8"
 ]
 
-const iframe = document.querySelector('iframe');
+const frame = document.querySelector('#video');
 
 function playSong(index) {
-    iframe.src = arraySongs[index];
+    frame.src = arraySongs[index];
+    // frame.src += "&autoplay=1";
 }
 
 const faixas = document.querySelectorAll('.track');
