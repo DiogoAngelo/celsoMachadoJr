@@ -39,7 +39,7 @@ body {
 .navegacao.ativo {
     position: fixed;
     background-color: rgba(0,0,0,0.7);
-    z-index: 2;
+    z-index: 5;
     animation: animaBar .5s;
 }
 @keyframes animaBar {
