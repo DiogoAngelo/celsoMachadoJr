@@ -17,4 +17,3 @@ export default function initAddColor() {
     listen.addEventListener('mouseleave', removeColor);
   });
 }
-console.log('oi diogo lindo');
