@@ -29,6 +29,8 @@ export default class AddColor {
 
   init() {
     this.bindEvents();
-    this.addEvent();
+    if (this.btnListen.length && this.imgColor.length) {
+      this.addEvent();
+    }
   }
 }

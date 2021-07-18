@@ -34,6 +34,8 @@ export default class Songs {
 
   init() {
     this.bindEvents();
-    this.addEvents();
+    if (this.frame && this.faixas.length) {
+      this.addEvents();
+    }
   }
 }

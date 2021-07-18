@@ -29,6 +29,8 @@ export default class MenuBar {
 
   init() {
     this.bindEvent();
-    this.addEvent();
+    if (this.navBars.length) {
+      this.addEvent();
+    }
   }
 }
