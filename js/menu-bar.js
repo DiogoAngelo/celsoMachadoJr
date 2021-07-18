@@ -1,8 +1,10 @@
-export default function initMenuBar() {
-  const navBars = document.querySelectorAll('.navegacao');
+export default class MenuBar {
+  constructor(navbar) {
+    this.navBars = document.querySelectorAll(navbar);
+  }
 
-  function showBar() {
-    navBars.forEach((navBar) => {
+  showBar() {
+    this.navBars.forEach((navBar) => {
       const navBarHeight = navBar.getBoundingClientRect().top;
       if (navBarHeight < -50) {
         if (!navBar.classList.contains('ativo')) {
@@ -16,5 +18,17 @@ export default function initMenuBar() {
       }
     });
   }
-  window.addEventListener('scroll', showBar);
+
+  bindEvent() {
+    this.showBar = this.showBar.bind(this);
+  }
+
+  addEvent() {
+    window.addEventListener('scroll', this.showBar);
+  }
+
+  init() {
+    this.bindEvent();
+    this.addEvent();
+  }
 }
