@@ -1,19 +1,34 @@
-export default function initAddColor() {
-  const btnListen = document.querySelectorAll('.click');
-  const imgColor = document.querySelectorAll('.img');
-
-  function addColor(index) {
-    imgColor[index].classList.add('ativo');
+export default class AddColor {
+  constructor(button, element) {
+    this.btnListen = document.querySelectorAll(button);
+    this.imgColor = document.querySelectorAll(element);
   }
-  function removeColor() {
-    imgColor.forEach((item) => {
+
+  addColor(index) {
+    this.imgColor[index].classList.add('ativo');
+  }
+
+  removeColor() {
+    this.imgColor.forEach((item) => {
       item.classList.remove('ativo');
     });
   }
-  btnListen.forEach((listen, index) => {
-    listen.addEventListener('mouseover', () => {
-      addColor(index);
+
+  bindEvents() {
+    this.removeColor = this.removeColor.bind(this);
+  }
+
+  addEvent() {
+    this.btnListen.forEach((item, index) => {
+      item.addEventListener('mouseover', () => {
+        this.addColor(index);
+      });
+      item.addEventListener('mouseleave', this.removeColor);
     });
-    listen.addEventListener('mouseleave', removeColor);
-  });
+  }
+
+  init() {
+    this.bindEvents();
+    this.addEvent();
+  }
 }

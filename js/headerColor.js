@@ -1,14 +1,29 @@
-export default function initAddColorHeader() {
-  const header = document.querySelector('.header-home');
-  const btn = document.querySelector('.button');
-
-  function addColor() {
-    header.classList.add('ativo');
-  }
-  function removeColor() {
-    header.classList.remove('ativo');
+export default class AddColorHeader {
+  constructor(button, element) {
+    this.header = document.querySelector(element);
+    this.btn = document.querySelector(button);
   }
 
-  btn.addEventListener('mouseover', addColor);
-  btn.addEventListener('mouseleave', removeColor);
+  addColor() {
+    this.header.classList.add('ativo');
+  }
+
+  removeColor() {
+    this.header.classList.remove('ativo');
+  }
+
+  bindEvents() {
+    this.addColor = this.addColor.bind(this);
+    this.removeColor = this.removeColor.bind(this);
+  }
+
+  addEvents() {
+    this.btn.addEventListener('mouseover', this.addColor);
+    this.btn.addEventListener('mouseleave', this.removeColor);
+  }
+
+  init() {
+    this.bindEvents();
+    this.addEvents();
+  }
 }
