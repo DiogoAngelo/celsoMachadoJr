@@ -12,7 +12,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 5fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    background-image: url('../img/capa-bw.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -28,7 +27,14 @@ body {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color:rgba(0,0,0,0.3);
+    background-color:rgba(0,0,0,0.4);
+}
+.header-home {
+    background-image: linear-gradient(black, black), url('../img/capa-color.png');
+    background-blend-mode: saturation;
+}
+.header-home.ativo {
+    background-blend-mode:lighten;
 }
 .navegacao {
     height: 60px;
@@ -39,7 +45,7 @@ body {
 .navegacao.ativo {
     position: fixed;
     background-color: rgba(0,0,0,0.7);
-    z-index: 2;
+    z-index: 5;
     animation: animaBar .5s;
 }
 @keyframes animaBar {
