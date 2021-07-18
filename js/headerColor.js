@@ -24,7 +24,7 @@ export default class AddColorHeader {
 
   init() {
     this.bindEvents();
-    if (this.btn) {
+    if (this.btn && this.header) {
       this.addEvents();
     }
   }
