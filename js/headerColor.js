@@ -1,7 +1,7 @@
 export default class AddColorHeader {
   constructor(button, element) {
-    this.header = document.querySelector(element);
     this.btn = document.querySelector(button);
+    this.header = document.querySelector(element);
   }
 
   addColor() {
@@ -24,6 +24,8 @@ export default class AddColorHeader {
 
   init() {
     this.bindEvents();
-    this.addEvents();
+    if (this.btn) {
+      this.addEvents();
+    }
   }
 }

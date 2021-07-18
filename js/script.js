@@ -1,9 +1,9 @@
 /* eslint-disable import/extensions */
 import AddColor from './add-color.js';
 import MenuBar from './menu-bar.js';
-import initMenuBurger from './menu-burger.js';
-import initSongs from './songs.js';
 import AddColorHeader from './headerColor.js';
+import MenuBurger from './menu-burger.js';
+import Songs from './songs.js';
 
 const addColor = new AddColor('.listen', '.img');
 addColor.init();
@@ -14,5 +14,8 @@ addColorHeader.init();
 const menuBar = new MenuBar('.navegacao');
 menuBar.init();
 
-initMenuBurger();
-initSongs();
+const menuBurger = new MenuBurger();
+menuBurger.init();
+
+const songs = new Songs('#video', '.track');
+songs.init();

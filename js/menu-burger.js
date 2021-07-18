@@ -1,15 +1,29 @@
-export default function initMenuBurger() {
-  const burgerTrace = document.querySelectorAll('.trace');
-  const menuBurger = document.querySelector('.burger');
-  const menu = document.querySelector('.menu-grow');
-  const menuGrowItems = document.querySelector('.menu-grow-items');
+export default class MenuBurger {
+  constructor() {
+    this.burgerTrace = document.querySelectorAll('.trace');
+    this.menuBurger = document.querySelector('.burger');
+    this.menu = document.querySelector('.menu-grow');
+    this.menuGrowItems = document.querySelector('.menu-grow-items');
+  }
 
-  function openMenu() {
-    burgerTrace.forEach((trace) => {
+  openMenu() {
+    this.burgerTrace.forEach((trace) => {
       trace.classList.toggle('ativo');
     });
-    menu.classList.toggle('ativo');
-    menuGrowItems.classList.toggle('ativo');
+    this.menu.classList.toggle('ativo');
+    this.menuGrowItems.classList.toggle('ativo');
   }
-  menuBurger.addEventListener('click', openMenu);
+
+  bindEvents() {
+    this.openMenu = this.openMenu.bind(this);
+  }
+
+  addEvents() {
+    this.menuBurger.addEventListener('click', this.openMenu);
+  }
+
+  init() {
+    this.bindEvents();
+    this.addEvents();
+  }
 }
