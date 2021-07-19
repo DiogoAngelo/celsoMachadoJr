@@ -21,5 +21,5 @@ menuBurger.init();
 const songs = new Songs('#video', '.track');
 songs.init();
 
-const modalTextos = new ModalTextos();
+const modalTextos = new ModalTextos('.projects-display .listen', '.modal-container', '.close', '.texto-modal', '.texto');
 modalTextos.init();
