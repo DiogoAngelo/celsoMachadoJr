@@ -4,6 +4,7 @@ import MenuBar from './menu-bar.js';
 import AddColorHeader from './headerColor.js';
 import MenuBurger from './menu-burger.js';
 import Songs from './songs.js';
+import ModalTextos from './modal.js';
 
 const addColor = new AddColor('.listen', '.img');
 addColor.init();
@@ -19,3 +20,6 @@ menuBurger.init();
 
 const songs = new Songs('#video', '.track');
 songs.init();
+
+const modalTextos = new ModalTextos();
+modalTextos.init();
