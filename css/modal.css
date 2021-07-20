@@ -1,0 +1,67 @@
+
+/* MODAL */
+
+.modal-container, .modal-container-contact {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0, .6);
+    z-index: 9999;
+    animation: animaModal .5s ease-in-out;
+    
+}
+.modal, .modal-contact {
+    background: #dedede;
+    font-weight: 300;
+    width: 620px;
+    min-width: 250px;
+    height: 320px;
+    overflow-y: scroll;
+    padding: 2rem;
+    box-shadow: 0 0 0 10px #fff;
+    margin-right: -35px;
+}
+.modal h1, .modal-contact h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.modal p, .modal-contact p {
+    margin-top: 1rem;
+}
+.close, .close-contact {
+    position: relative;
+    top: -190px;
+    right: -15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background: #8f8f8f;
+    color: #fff;
+    box-shadow: 0 2px 4px #000;
+    cursor: pointer;
+}
+.modal-container.ativo, .modal-container-contact.ativo {
+    display: flex;
+}
+@keyframes animaModal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.textos-modal, .textos-modal-contact {
+    display: none;
+}
+.data {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+}
