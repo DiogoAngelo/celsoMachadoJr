@@ -3,7 +3,7 @@ img {
 }
 .filter {
     height: 100vh;
-    background-image: url('../img/gif/hand.gif');
+    background-image: url('../img/gif/walking.gif');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -17,7 +17,7 @@ img {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color:rgba(0,0,0,0.4);
+    background-color:rgba(0,0,0,0.6);
 }
 
 .featuring .titulo-banda {
@@ -28,6 +28,25 @@ img {
     width: 80px;
     left: 0;
 }
+
+.voce-guitarrista .titulo-banda {
+    padding-right: 20px;
+}
+
+.voce-guitarrista .titulo-banda::after {
+    width: 120px;
+    right: 0;
+}
+
+.teaching .titulo-banda {
+    padding-left: 20px;
+}
+
+.teaching .titulo-banda::after {
+    width: 80px;
+    left: 0;
+}
+
 
 /* MODAL */
 
