@@ -1,1 +1,156 @@
-(()=>{"use strict";new class{constructor(t,e){this.btnListen=document.querySelectorAll(t),this.imgColor=document.querySelectorAll(e)}addColor(t){this.imgColor[t].classList.add("ativo")}removeColor(){this.imgColor.forEach((t=>{t.classList.remove("ativo")}))}bindEvents(){this.removeColor=this.removeColor.bind(this)}addEvent(){this.btnListen.forEach(((t,e)=>{t.addEventListener("mouseover",(()=>{this.addColor(e)})),t.addEventListener("mouseleave",this.removeColor)}))}init(){this.bindEvents(),this.btnListen.length&&this.imgColor.length&&this.addEvent()}}(".listen",".img").init(),new class{constructor(t,e){this.btn=document.querySelector(t),this.header=document.querySelector(e)}addColor(){this.header.classList.add("ativo")}removeColor(){this.header.classList.remove("ativo")}bindEvents(){this.addColor=this.addColor.bind(this),this.removeColor=this.removeColor.bind(this)}addEvents(){this.btn.addEventListener("mouseover",this.addColor),this.btn.addEventListener("mouseleave",this.removeColor)}init(){this.bindEvents(),this.btn&&this.header&&this.addEvents()}}(".button",".header-home").init(),new class{constructor(t){this.navBars=document.querySelectorAll(t)}showBar(){this.navBars.forEach((t=>{t.getBoundingClientRect().top<-50&&(t.classList.contains("ativo")||t.classList.add("ativo")),0===window.scrollY&&t.classList.contains("ativo")&&t.classList.remove("ativo")}))}bindEvent(){this.showBar=this.showBar.bind(this)}addEvent(){window.addEventListener("scroll",this.showBar)}init(){this.bindEvent(),this.navBars.length&&this.addEvent()}}(".navegacao").init(),(new class{constructor(){this.burgerTrace=document.querySelectorAll(".trace"),this.menuBurger=document.querySelector(".burger"),this.menu=document.querySelector(".menu-grow"),this.menuGrowItems=document.querySelector(".menu-grow-items")}openMenu(){this.burgerTrace.forEach((t=>{t.classList.toggle("ativo")})),this.menu.classList.toggle("ativo"),this.menuGrowItems.classList.toggle("ativo")}bindEvents(){this.openMenu=this.openMenu.bind(this)}addEvents(){this.menuBurger.addEventListener("click",this.openMenu)}init(){this.bindEvents(),this.addEvents()}}).init(),new class{constructor(t,e){this.frame=document.querySelector(t),this.faixas=document.querySelectorAll(e),this.arraySongs=["https://www.youtube.com/embed/_oI_rZE1UWY","https://www.youtube.com/embed/OjbYDq1ATMc","https://www.youtube.com/embed/U51Ul6iyMAA","https://www.youtube.com/embed/2xhT82R3DkQ","https://www.youtube.com/embed/RrcGvbikMeM","https://www.youtube.com/embed/SJpSu8SVd1E","https://www.youtube.com/embed/JkyczBrrQL8","https://www.youtube.com/embed/4ggZQjtH78U","https://www.youtube.com/embed/RcEmQ2Q7f94","https://www.youtube.com/embed/KH0UEvJ_ES8"]}playSong(t){this.frame.src=this.arraySongs[t]}bindEvents(){this.playSong=this.playSong.bind(this)}addEvents(){this.faixas.forEach(((t,e)=>{t.addEventListener("click",(()=>{this.playSong(e)}))}))}init(){this.bindEvents(),this.frame&&this.faixas.length&&this.addEvents()}}("#video",".track").init(),new class{constructor(t,e,s,i,o){this.elementos=document.querySelectorAll(t),this.modalContainer=document.querySelector(e),this.fechar=document.querySelector(s),this.textoModal=document.querySelector(i),this.textos=document.querySelectorAll(o)}openModal(t){this.modalContainer.classList.add("ativo"),this.textoModal.innerHTML=this.textos[t].innerHTML}closeModal(){this.modalContainer.classList.remove("ativo")}handleBox(t){t.target===this.modalContainer&&this.closeModal()}bindEvents(){this.openModal=this.openModal.bind(this),this.handleBox=this.handleBox.bind(this),this.closeModal=this.closeModal.bind(this)}addEvents(){this.elementos.forEach(((t,e)=>{t.addEventListener("click",(()=>{this.openModal(e)}))})),this.fechar.addEventListener("click",this.closeModal),this.modalContainer.addEventListener("click",this.handleBox)}init(){this.bindEvents(),this.addEvents()}}(".projects-display .listen",".modal-container",".close",".texto-modal",".texto").init(),new class{constructor(t,e,s){this.modalContainer=document.querySelector(t),this.link=document.querySelector(s),this.fechar=document.querySelector(e)}openModal(){this.modalContainer.classList.add("ativo")}closeModal(){this.modalContainer.classList.remove("ativo")}handleBox(t){t.target===this.modalContainer&&this.closeModal()}bindEvents(){this.openModal=this.openModal.bind(this),this.handleBox=this.handleBox.bind(this),this.closeModal=this.closeModal.bind(this)}addEvents(){this.link.addEventListener("click",this.openModal),this.fechar.addEventListener("click",this.closeModal),this.modalContainer.addEventListener("click",this.handleBox)}init(){this.bindEvents(),this.addEvents()}}(".modal-container-contact",".close-contact",".contact").init()})();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./js/add-color.js":
+/*!*************************!*\
+  !*** ./js/add-color.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ AddColor)\n/* harmony export */ });\nclass AddColor {\n  constructor(button, element) {\n    this.btnListen = document.querySelectorAll(button);\n    this.imgColor = document.querySelectorAll(element);\n  }\n\n  addColor(index) {\n    this.imgColor[index].classList.add('ativo');\n  }\n\n  removeColor() {\n    this.imgColor.forEach((item) => {\n      item.classList.remove('ativo');\n    });\n  }\n\n  bindEvents() {\n    this.removeColor = this.removeColor.bind(this);\n  }\n\n  addEvent() {\n    this.btnListen.forEach((item, index) => {\n      item.addEventListener('mouseover', () => {\n        this.addColor(index);\n      });\n      item.addEventListener('mouseleave', this.removeColor);\n    });\n  }\n\n  init() {\n    this.bindEvents();\n    if (this.btnListen.length && this.imgColor.length) {\n      this.addEvent();\n    }\n  }\n}\n\n\n//# sourceURL=webpack://celsinho/./js/add-color.js?");
+
+/***/ }),
+
+/***/ "./js/headerColor.js":
+/*!***************************!*\
+  !*** ./js/headerColor.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ AddColorHeader)\n/* harmony export */ });\nclass AddColorHeader {\n  constructor(button, element) {\n    this.btn = document.querySelector(button);\n    this.header = document.querySelector(element);\n  }\n\n  addColor() {\n    this.header.classList.add('ativo');\n  }\n\n  removeColor() {\n    this.header.classList.remove('ativo');\n  }\n\n  bindEvents() {\n    this.addColor = this.addColor.bind(this);\n    this.removeColor = this.removeColor.bind(this);\n  }\n\n  addEvents() {\n    this.btn.addEventListener('mouseover', this.addColor);\n    this.btn.addEventListener('mouseleave', this.removeColor);\n  }\n\n  init() {\n    this.bindEvents();\n    if (this.btn && this.header) {\n      this.addEvents();\n    }\n  }\n}\n\n\n//# sourceURL=webpack://celsinho/./js/headerColor.js?");
+
+/***/ }),
+
+/***/ "./js/menu-bar.js":
+/*!************************!*\
+  !*** ./js/menu-bar.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ MenuBar)\n/* harmony export */ });\nclass MenuBar {\n  constructor(navbar) {\n    this.navBars = document.querySelectorAll(navbar);\n  }\n\n  showBar() {\n    this.navBars.forEach((navBar) => {\n      const navBarHeight = navBar.getBoundingClientRect().top;\n      if (navBarHeight < -50) {\n        if (!navBar.classList.contains('ativo')) {\n          navBar.classList.add('ativo');\n        }\n      }\n      if (window.scrollY === 0) {\n        if (navBar.classList.contains('ativo')) {\n          navBar.classList.remove('ativo');\n        }\n      }\n    });\n  }\n\n  bindEvent() {\n    this.showBar = this.showBar.bind(this);\n  }\n\n  addEvent() {\n    window.addEventListener('scroll', this.showBar);\n  }\n\n  init() {\n    this.bindEvent();\n    if (this.navBars.length) {\n      this.addEvent();\n    }\n  }\n}\n\n\n//# sourceURL=webpack://celsinho/./js/menu-bar.js?");
+
+/***/ }),
+
+/***/ "./js/menu-burger.js":
+/*!***************************!*\
+  !*** ./js/menu-burger.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ MenuBurger)\n/* harmony export */ });\nclass MenuBurger {\n  constructor() {\n    this.burgerTrace = document.querySelectorAll('.trace');\n    this.menuBurger = document.querySelector('.burger');\n    this.menu = document.querySelector('.menu-grow');\n    this.menuGrowItems = document.querySelector('.menu-grow-items');\n  }\n\n  openMenu() {\n    this.burgerTrace.forEach((trace) => {\n      trace.classList.toggle('ativo');\n    });\n    this.menu.classList.toggle('ativo');\n    this.menuGrowItems.classList.toggle('ativo');\n  }\n\n  bindEvents() {\n    this.openMenu = this.openMenu.bind(this);\n  }\n\n  addEvents() {\n    this.menuBurger.addEventListener('click', this.openMenu);\n  }\n\n  init() {\n    this.bindEvents();\n    this.addEvents();\n  }\n}\n\n\n//# sourceURL=webpack://celsinho/./js/menu-burger.js?");
+
+/***/ }),
+
+/***/ "./js/modal-contact.js":
+/*!*****************************!*\
+  !*** ./js/modal-contact.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ ModalContact)\n/* harmony export */ });\n/* eslint-disable indent */\nclass ModalContact {\n    constructor(modal, fechar, link) {\n        this.modalContainer = document.querySelector(modal);\n        this.link = document.querySelector(link);\n        this.fechar = document.querySelector(fechar);\n    }\n\n    openModal() {\n        this.modalContainer.classList.add('ativo');\n    }\n\n    closeModal() {\n      this.modalContainer.classList.remove('ativo');\n    }\n\n    handleBox(event) {\n      if (event.target === this.modalContainer) {\n        this.closeModal();\n      }\n    }\n\n    bindEvents() {\n      this.openModal = this.openModal.bind(this);\n      this.handleBox = this.handleBox.bind(this);\n      this.closeModal = this.closeModal.bind(this);\n    }\n\n    addEvents() {\n        this.link.addEventListener('click', this.openModal);\n        this.fechar.addEventListener('click', this.closeModal);\n        this.modalContainer.addEventListener('click', this.handleBox);\n    }\n\n    init() {\n      this.bindEvents();\n      this.addEvents();\n    }\n  }\n\n\n//# sourceURL=webpack://celsinho/./js/modal-contact.js?");
+
+/***/ }),
+
+/***/ "./js/modal.js":
+/*!*********************!*\
+  !*** ./js/modal.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ ModalTextos)\n/* harmony export */ });\nclass ModalTextos {\n  constructor(elementos, container, fechar, textoModal, texto) {\n    this.elementos = document.querySelectorAll(elementos);\n    this.modalContainer = document.querySelector(container);\n    this.fechar = document.querySelector(fechar);\n    this.textoModal = document.querySelector(textoModal);\n    this.textos = document.querySelectorAll(texto);\n  }\n\n  openModal(index) {\n    this.modalContainer.classList.add('ativo');\n    this.textoModal.innerHTML = this.textos[index].innerHTML;\n  }\n\n  closeModal() {\n    this.modalContainer.classList.remove('ativo');\n  }\n\n  handleBox(event) {\n    if (event.target === this.modalContainer) {\n      this.closeModal();\n    }\n  }\n\n  bindEvents() {\n    this.openModal = this.openModal.bind(this);\n    this.handleBox = this.handleBox.bind(this);\n    this.closeModal = this.closeModal.bind(this);\n  }\n\n  addEvents() {\n    this.elementos.forEach((elemento, index) => {\n      elemento.addEventListener('click', () => {\n        this.openModal(index);\n      });\n    });\n    this.fechar.addEventListener('click', this.closeModal);\n    this.modalContainer.addEventListener('click', this.handleBox);\n  }\n\n  init() {\n    this.bindEvents();\n    this.addEvents();\n  }\n}\n\n\n//# sourceURL=webpack://celsinho/./js/modal.js?");
+
+/***/ }),
+
+/***/ "./js/script.js":
+/*!**********************!*\
+  !*** ./js/script.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _add_color_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./add-color.js */ \"./js/add-color.js\");\n/* harmony import */ var _menu_bar_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu-bar.js */ \"./js/menu-bar.js\");\n/* harmony import */ var _headerColor_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./headerColor.js */ \"./js/headerColor.js\");\n/* harmony import */ var _menu_burger_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menu-burger.js */ \"./js/menu-burger.js\");\n/* harmony import */ var _songs_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./songs.js */ \"./js/songs.js\");\n/* harmony import */ var _modal_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modal.js */ \"./js/modal.js\");\n/* harmony import */ var _modal_contact_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modal-contact.js */ \"./js/modal-contact.js\");\n/* eslint-disable import/extensions */\n\n\n\n\n\n\n\n\nconst addColor = new _add_color_js__WEBPACK_IMPORTED_MODULE_0__.default('.listen', '.img');\naddColor.init();\n\nconst addColorHeader = new _headerColor_js__WEBPACK_IMPORTED_MODULE_2__.default('.button', '.header-home');\naddColorHeader.init();\n\nconst menuBar = new _menu_bar_js__WEBPACK_IMPORTED_MODULE_1__.default('.navegacao');\nmenuBar.init();\n\nconst menuBurger = new _menu_burger_js__WEBPACK_IMPORTED_MODULE_3__.default();\nmenuBurger.init();\n\nconst songs = new _songs_js__WEBPACK_IMPORTED_MODULE_4__.default('#video', '.track');\nsongs.init();\n\nconst modalTextos = new _modal_js__WEBPACK_IMPORTED_MODULE_5__.default('.projects-display .listen', '.modal-container', '.close', '.texto-modal', '.texto');\nmodalTextos.init();\n\nconst modalContact = new _modal_contact_js__WEBPACK_IMPORTED_MODULE_6__.default('.modal-container-contact', '.close-contact', '.contact');\nmodalContact.init();\n\n\n//# sourceURL=webpack://celsinho/./js/script.js?");
+
+/***/ }),
+
+/***/ "./js/songs.js":
+/*!*********************!*\
+  !*** ./js/songs.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Songs)\n/* harmony export */ });\nclass Songs {\n  constructor(video, track) {\n    this.frame = document.querySelector(video);\n    this.faixas = document.querySelectorAll(track);\n    this.arraySongs = [\n      'https://www.youtube.com/embed/_oI_rZE1UWY',\n      'https://www.youtube.com/embed/OjbYDq1ATMc',\n      'https://www.youtube.com/embed/U51Ul6iyMAA',\n      'https://www.youtube.com/embed/2xhT82R3DkQ',\n      'https://www.youtube.com/embed/RrcGvbikMeM',\n      'https://www.youtube.com/embed/SJpSu8SVd1E',\n      'https://www.youtube.com/embed/JkyczBrrQL8',\n      'https://www.youtube.com/embed/4ggZQjtH78U',\n      'https://www.youtube.com/embed/RcEmQ2Q7f94',\n      'https://www.youtube.com/embed/KH0UEvJ_ES8',\n    ];\n  }\n\n  playSong(index) {\n    this.frame.src = this.arraySongs[index];\n  }\n\n  bindEvents() {\n    this.playSong = this.playSong.bind(this);\n  }\n\n  addEvents() {\n    this.faixas.forEach((faixa, index) => {\n      faixa.addEventListener('click', () => {\n        this.playSong(index);\n      });\n    });\n  }\n\n  init() {\n    this.bindEvents();\n    if (this.frame && this.faixas.length) {\n      this.addEvents();\n    }\n  }\n}\n\n\n//# sourceURL=webpack://celsinho/./js/songs.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./js/script.js");
+/******/ 	
+/******/ })()
+;
