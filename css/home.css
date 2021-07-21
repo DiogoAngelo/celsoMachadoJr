@@ -112,11 +112,11 @@ em {
 }
 /* CELSO 3D */
 .celso-3d .titulo-banda {
-    padding-left: 30px;
+    padding-right: 20px;
 }
 .celso-3d .titulo-banda:after {
     width: 50px;
-    left: 0;
+    right: 0;
 }
  /* OFICINA G3  */
  .oficina-g3 .titulo-banda {
