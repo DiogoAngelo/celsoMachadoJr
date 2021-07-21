@@ -132,4 +132,71 @@
     }
 }
 
+/* Music Modal */
+@media(max-width: 1170px) {
+    .header-grid-music {
+        background-size: 95%;
+    }
+    .quote {
+        grid-column: 3;
+    }
+}
+@media(max-width: 900px) {
+    .header-grid-music {
+        background-size: 100%;
+        background-position: -10px -100px;
+    }
+    .quote {
+        grid-column: 1;
+    }
+}
+@media(max-width: 630px) {
+    .header-grid-music {
+        background-size: 200%;
+        background-position: -200px 0;
+    }
+    .quote {
+        font-size: 1.3rem;
+        align-self:flex-start;
+    }
+    .center-container {
+        justify-content: center;
+    }
+}
+@media(max-width: 530px) {
+    .album iframe {
+        width: 315px;
+        height: 315px;
+    }
+    .tracks {
+        width: 330px;
+    }
+}
+
+@media(max-width: 415px) {
+    .header-grid-music {
+        background-size: 300%;
+        background-position: -350px -100px;
+    }
+}
+@media(max-width: 400px) {
+    .album iframe {
+        width: 300px;
+        height: 300px;
+    } 
+    .tracks {
+        width: 320px;
+    }
+}
+@media(max-width: 340px) {
+    .album iframe {
+        width: 280px;
+        height: 280px;
+    } 
+    .tracks {
+        width: 280px;
+    }
+}
+
+
 
