@@ -14,7 +14,7 @@
     background-color: #212121;
 }
 .quote {
-    grid-column: 7;
+    grid-column: 1 / -1;
     grid-row: 3;
     color: #fff;
     text-align: center;
