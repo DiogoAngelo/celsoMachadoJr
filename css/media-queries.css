@@ -1,21 +1,10 @@
 @media(max-width: 1170px) {
-    .header-grid {
-        grid-template-columns: 1fr 3fr 4fr  120px;
-    }
-    .navegacao {
-        grid-column: 3 / -1;
-    }
+
     .celso-titulo {
-        grid-column: 3;
         width: 100%;
         height: auto;
     }
-    .button {
-        grid-column: 3;
-    }
-    .social {
-        grid-column: 1 / 3;
-    }
+
     .flex-container{
         flex-direction: column;
         height: auto;
@@ -42,7 +31,6 @@
 @media(max-width: 900px) {
     .header-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 180px 1fr 1fr;
         background-attachment:scroll;
         align-items: center;
         height: 100%;
@@ -53,6 +41,7 @@
         display: none;
     }
     .celso-titulo {
+        font-size: 5rem;
         grid-column: 1;
         width: 100%;
         margin: 0 auto;
@@ -85,6 +74,9 @@
         justify-content: left;
         line-height: 22px;
     }
+    .listen {
+        width: 100%;
+    }
 }
 @media(max-width: 630px) {
     .header-grid {
@@ -99,6 +91,9 @@
         line-height: 50px;
         letter-spacing: 10px;
         z-index: 1;
+    }
+    .quote {
+        margin-top: 20px;
     }
     .machado {
         font-size: 3.5rem;
@@ -132,13 +127,10 @@
     }
 }
 
-/* Music Modal */
+/* MUSIC  */
 @media(max-width: 1170px) {
     .header-grid-music {
         background-size: 95%;
-    }
-    .quote {
-        grid-column: 3;
     }
 }
 @media(max-width: 900px) {
