@@ -40,6 +40,8 @@ export default class ModalTextos {
 
   init() {
     this.bindEvents();
-    this.addEvents();
+    if (this.elementos.length && this.container) {
+      this.addEvents();
+    }
   }
 }

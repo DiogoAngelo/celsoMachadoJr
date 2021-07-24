@@ -40,6 +40,9 @@
     color: #222;
     margin-bottom: 20px;
 }
+.musica-titulo {
+    font-size: 20rem;
+}
 .tracks {
     margin: 20px 0;
     line-height: 40px;

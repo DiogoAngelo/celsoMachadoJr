@@ -5,7 +5,6 @@ import AddColorHeader from './headerColor.js';
 import MenuBurger from './menu-burger.js';
 import Songs from './songs.js';
 import ModalTextos from './modal.js';
-import ModalContact from './modal-contact.js';
 
 const addColor = new AddColor('.listen', '.img');
 addColor.init();
@@ -24,6 +23,3 @@ songs.init();
 
 const modalTextos = new ModalTextos('.projects-display .listen', '.modal-container', '.close', '.texto-modal', '.texto');
 modalTextos.init();
-
-const modalContact = new ModalContact('.modal-container-contact', '.close-contact', '.contact');
-modalContact.init();
