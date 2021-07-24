@@ -100,9 +100,11 @@ body {
 .button {
     font-family: vortice-concept, sans-serif;
     letter-spacing: 8px;
-    display: block;
+    display: flex;
     grid-column: 2;
     grid-row: 3;
+    justify-content: center;
+    align-items: center;
     justify-self: center;
     align-self: center;
     width: 300px;

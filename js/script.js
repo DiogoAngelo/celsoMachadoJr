@@ -5,6 +5,7 @@ import AddColorHeader from './headerColor.js';
 import MenuBurger from './menu-burger.js';
 import Songs from './songs.js';
 import ModalTextos from './modal.js';
+import ModalIndex from './modal-index.js';
 
 const addColor = new AddColor('.listen', '.img');
 addColor.init();
@@ -23,3 +24,6 @@ songs.init();
 
 const modalTextos = new ModalTextos('.projects-display .listen', '.modal-container', '.close', '.texto-modal', '.texto');
 modalTextos.init();
+
+const modalIndex = new ModalIndex('[data-modal="oficinag3"]', '.modal-container', '.close');
+modalIndex.init();
