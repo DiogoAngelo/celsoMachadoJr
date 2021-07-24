@@ -28,6 +28,12 @@
         flex-direction: column;
         align-items: flex-start;
     }
+    .descricao-dark .titulo-banda {
+        padding-left: 20px;
+    }
+    .descricao-dark .titulo-banda::after {
+        left: 0;
+    }
 }
 @media(max-width: 900px) {
     .header-grid {
