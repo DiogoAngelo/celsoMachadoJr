@@ -226,5 +226,50 @@
     }
 }
 
+/* MODAL */
+
+@media(max-width: 720px) {
+ 
+    .modal {
+        max-width: 480px;
+    }
+}
+@media(max-width: 630px) {
+    .modal {
+        max-width: 440px;
+        padding: 1rem;
+    }
+    .close {
+        top: -180px;
+    }
+
+}
+@media(max-width: 530px) {
+    .modal {
+        max-width: 300px;
+    }
+
+}
+@media(max-width: 420px) {
+    .modal {
+        max-width: 280px;
+    }
+}
+@media(max-width: 380px) {
+    .modal {
+        max-width: 250px;
+    }
+}
+@media(max-width: 340px) {
+    .modal {
+        max-width: 220px;
+    }
+}
+
+
+
+
+
+
 
 

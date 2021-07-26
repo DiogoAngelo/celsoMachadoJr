@@ -58,9 +58,6 @@ img {
     .filter {
         background-image: url('../img/gif/umbrella.gif');
     }
-    .modal {
-        width: 480px;
-    }
     .image {
         width: 340px;
         filter: grayscale(0)
@@ -73,10 +70,6 @@ img {
     .celso-titulo {
         grid-row: 2;
     }
-    .modal {
-        width: 440px;
-        padding: 1rem;
-    }
     .close {
         top: -180px;
     }
@@ -88,11 +81,7 @@ img {
 @media(max-width: 530px) {
     .celso-titulo {
        font-size: 3rem;
-    }
-    .modal {
-        width: 300px;
-    }
-   
+    }   
     .image::before {
         display: none;
     }
@@ -100,11 +89,6 @@ img {
 @media(max-width: 370px) {
     .modal {
         width: 270px;
-    }
-}
-@media(max-width: 350px) {
-    .modal {
-        width: 250px;
     }
 }
 
