@@ -34,6 +34,8 @@ export default class ModalIndex {
 
     init() {
         this.bindEvents();
-        this.addEvents();
+        if (this.button) {
+            this.addEvents();
+        }
     }
   }
