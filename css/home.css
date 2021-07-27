@@ -83,6 +83,10 @@ em {
     color: #fff;
     flex-direction: row-reverse;
 }
+
+.dark em {
+    color: #fff;
+}
 .descricao-dark {
     display: flex;
     flex-direction: column;
